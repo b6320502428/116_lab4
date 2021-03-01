@@ -2,7 +2,7 @@
 #include <string.h>
 int main ()
 {
-    int i,j=1,tmp=0;
+    int i,j=1;
     char str[1001],ans[501]="";
     scanf("%[^\n]s",str);
     ans[0]=str[0]-32;
@@ -25,14 +25,11 @@ int main ()
             else if(str[i]=='\n');
             else
             {
-                //tmp++;
                 ans[j]=str[i]-32;
                 j++;
             }
         }
     }
     printf("%s\n",ans);
-    //printf("%d\n",tmp);
-    //printf("%d",strlen(str));
     return 0;
 }
