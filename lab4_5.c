@@ -2,8 +2,9 @@
 #include <string.h>
 int main ()
 {
-    int n,i,j,g[4]= {1,0,0,0},tmp;
+    int n,i,j,g[4]= {1,0,0,0},tmp,k;
     scanf("%d",&n);
+    int ans[n];
     char op[51];
     for(i=0; i<n; i++)
     {
@@ -49,6 +50,21 @@ int main ()
             default:
                 tmp=0;
             }
+        }
+        for(k=0; k<3; k++)
+        {
+            if(g[k]==1)
+            {
+                ans[i]=k+1;
+            }
+        }
+    }
+    for(i=0; i<n; i++)
+    {
+        printf("%d",ans[i]);
+        if(i<n-1)
+        {
+            printf("\n");
         }
     }
     return 0;
