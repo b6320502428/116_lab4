@@ -15,12 +15,12 @@ int main ()
     for(i=0;i<n-2;i++)
     {
         tmp=yt[i]+yt[i+1]+yt[i+2];
-        if(max<tmp)
+        if(max<=tmp)
         {
             b=i+1;
             max=tmp;
         }
-        if(min>tmp)
+        if(min>=tmp)
         {
             w=i+1;
             min=tmp;
