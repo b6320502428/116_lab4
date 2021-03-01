@@ -1,14 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 int main ()
 {
     int n;
     scanf("%d",&n);
-    char p[n][7];
-    int it[n],i;
-    for(i=0;i<n;i++);
-    {
-        scanf("%s ",p[n]);
-    }
+    char p[n][6];
 
     return 0;
 }
