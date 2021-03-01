@@ -18,11 +18,14 @@ int main ()
         if(max<tmp)
         {
             b=i+1;
+            max=tmp;
         }
         if(min>tmp)
         {
             w=i+1;
+            min=tmp;
         }
     }
+    printf("%d %d",b,w);
     return 0;
 }
